@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sea Eagle</title>
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="interface.css">
+</head>
+
+<body>
+
+  <script src="/__/firebase/6.3.0/firebase-app.js"></script>
+
+  <script src="/__/firebase/6.3.0/firebase-auth.js"></script>
+  <script src="/__/firebase/6.3.0/firebase-database.js"></script>
+  <script src="/__/firebase/6.3.0/firebase-messaging.js"></script>
+  <script src="/__/firebase/6.3.0/firebase-storage.js"></script>
+
+  <script src="/__/firebase/init.js"></script>
+
+  <div class="container">
+    <h1 class="device"><span>Sea</span> Eagle <i class='fa fa-anchor'></i>    </h1>
+    <div class="wrapper">
+      <div class="port">
+        <h3><i class="fa fa-ship" aria-hidden="true"></i> Moratuwa Port</h3>
+        <ul>
+          <li><i class="fa fa-address-card-o" aria-hidden="true"></i> Bandaranayake Road, Moratuwa</li>
+          <li><i class="fa fa-phone" aria-hidden="true"></i>  119</li>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i>  info@seaeagle.com</li>
+        </ul>
+      </div>
+      <div class="details">
+        <h3>Add Boat Details</h3>
+        <div class="alert">Boat Details Added</div>
+        <form id="boatFrom">
+          <p>
+            <label><i class="fa fa-id-badge" aria-hidden="true"></i> Boat ID</label>
+            <input type="text" name="id" id="id" required>
+          </p>
+          <p>
+            <label><i class="fa fa-users"></i> Number of Personnel</label>
+            <input type="text" name="count" id="count">
+          </p>
+          <p>
+            <label><i class="fa fa-map-marker" aria-hidden="true"></i> Starting Point</label>
+            <input type="text" name="begin" id="begin" required>
+          </p>
+          <p>
+            <label><i class="fa fa-map-marker" aria-hidden="true"></i> Destination</label>
+            <input type="text" name="end" id="end">
+          </p>
+          <p class="full">
+            <button type="submit">SUBMIT <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  
+</body>
+
+</html>
